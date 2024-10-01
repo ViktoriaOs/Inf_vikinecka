@@ -1,0 +1,32 @@
+def shreder ():
+    for i in range (1000,10000):
+        ltg = i % 100
+        ftg = i // 100
+        if ftg**2 + ltg**2 == i : 
+            print(i)
+
+
+def shreder2 ():
+   tog = 0
+   for i in range (1000,10000):
+       tog = tog + i 
+   return tog 
+        
+
+def fak (a):
+    tog = 1
+    for i in range (1,a+1):
+        tog = tog * i 
+    return tog
+
+
+def fun1 ():
+    for i in range (1,11):
+        print(i)
+
+
+
+print(fun1())
+shreder()
+print(shreder2())
+print(fak(5))
