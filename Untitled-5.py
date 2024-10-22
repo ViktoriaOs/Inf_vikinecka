@@ -47,11 +47,21 @@ import random
         #f+=1
 #print(a,b,c,d,e,f)
 
-jozo=[] #zoznam(list) ktory je zatial prazdny taky intracik alebo detsky domov
-for i in range(0,6):
-    jozo.append(0) #append buduje izbicky do intraku
+#jozo=[] #zoznam(list) ktory je zatial prazdny taky intracik alebo detsky domov
+#for i in range(0,6):
+    #jozo.append(0) #append buduje izbicky do intraku
 #print(jozo)
-for i in range(1,1000000):
-    temp=random.randrange(1, 7)
-    jozo[temp-1]=jozo[temp-1]+1
-print(jozo)
+#for i in range(1,1000000):
+    #temp=random.randrange(1, 7)
+    #jozo[temp-1]=jozo[temp-1]+1
+#print(jozo)
+
+a = float(input("zadaj cislo a:"))
+b = float(input("zadaj cislo b:"))
+c = float(input("zadaj cislo c:"))
+D=b**2-4*a*c
+if D >0:
+    x1=(-b+D**0,5)/2*a
+    x2=(-b-D**0,5)/2*a
+else:
+    if D=0:
