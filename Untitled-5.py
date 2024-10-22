@@ -25,24 +25,33 @@ import random
 #print(sucet/p)
 
 #hadzeme kockou xy krat
-a = 0
-b = 0
-c = 0
-d = 0
-e = 0
-f = 0
-for i in range(1, 100000):
+#a = 0
+#b = 0
+#c = 0
+#d = 0
+#e = 0
+#f = 0
+#for i in range(1, 100000):
+    #temp=random.randrange(1, 7)
+    #if temp==1:
+        #a+=1
+    #if temp==2:
+        #b+=1
+    #if temp==3:
+        #c+=1
+    #if temp==4:
+        #d+=1
+    #if temp==5:
+        #e+=1
+    #if temp==6:
+        #f+=1
+#print(a,b,c,d,e,f)
+
+jozo=[] #zoznam(list) ktory je zatial prazdny taky intracik alebo detsky domov
+for i in range(0,6):
+    jozo.append(0) #append buduje izbicky do intraku
+#print(jozo)
+for i in range(1,1000000):
     temp=random.randrange(1, 7)
-    if temp==1:
-        a+=1
-    if temp==2:
-        b+=1
-    if temp==3:
-        c+=1
-    if temp==4:
-        d+=1
-    if temp==5:
-        e+=1
-    if temp==6:
-        f+=1
-print(a,b,c,d,e,f)
+    jozo[temp-1]=jozo[temp-1]+1
+print(jozo)
